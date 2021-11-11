@@ -3,6 +3,8 @@ import {
 } from "react-router-dom";
 import './App.css';
 import Home from './pages/Home/Home';
+import Login from "./pages/Login/Login/Login";
+import Register from "./pages/Login/Register/Register";
 import Dashboard from "./pages/Pages/Dashboard/Dashboard";
 import Footer from "./pages/Pages/Footer/Footer";
 import Navbar from "./pages/Pages/Navbar/Navbar";
@@ -28,6 +30,12 @@ function App() {
           </Route>
           <Route path="/dashboard">
               <Dashboard/>
+          </Route>
+          <Route path="/login">
+              <Login/>
+          </Route>
+          <Route path="/register">
+              <Register/>
           </Route>
           <Route path="*">
             <NotFound />
