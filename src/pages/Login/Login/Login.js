@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
     const [loginData, setLoginData] = useState({});
     const { user, loginUser, isLoading, authError, logout } = useAuth();
+
+    const location = useLocation();
+    const history = useHistory();
+
     const handleOnChange = (e) => {
         const field = e.target.name;
         const value = e.target.value;
@@ -17,7 +21,7 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        loginUser(loginData.email, loginData.password);
+        loginUser(loginData.email, loginData.password, location, history);
     }
 
     return (

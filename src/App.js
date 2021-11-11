@@ -12,6 +12,7 @@ import Navbar from "./pages/Pages/Navbar/Navbar";
 import NotFound from "./pages/Pages/NotFound/NotFound";
 import Products from "./pages/Pages/Products/Products";
 import Services from "./pages/Pages/Services/Services";
+import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -30,9 +31,9 @@ function App() {
             <Route path="/services">
               <Services />
             </Route>
-            <Route path="/dashboard">
+            <PrivateRoute path="/dashboard">
               <Dashboard />
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login />
             </Route>
