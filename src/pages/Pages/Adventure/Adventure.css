@@ -1,0 +1,25 @@
+.adventure {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.adventure-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.adventure-title {
+  color: #3b3b3b;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.adventure-para {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.adventure-image img {
+  margin-right: 10px;
+}

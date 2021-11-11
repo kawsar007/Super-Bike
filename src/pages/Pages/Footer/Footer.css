@@ -1,0 +1,33 @@
+.footer {
+  background-color: #3b3b3b;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 1px solid #1ba370;
+}
+
+.footer-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: #fff;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  color: #fff;
+}
+
+.payment-btn img {
+  margin-right: 8px;
+  cursor: pointer;
+}
