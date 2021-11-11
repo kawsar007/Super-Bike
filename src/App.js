@@ -2,6 +2,7 @@ import {
   BrowserRouter as Router, Route, Switch
 } from "react-router-dom";
 import './App.css';
+import AuthProvider from "./context/AuthProvider/AuthProvider";
 import Home from './pages/Home/Home';
 import Login from "./pages/Login/Login/Login";
 import Register from "./pages/Login/Register/Register";
@@ -15,34 +16,36 @@ import Services from "./pages/Pages/Services/Services";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Navbar/>
-        <Switch>
-          <Route exact path="/">
-          <Home />
+      <AuthProvider>
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route exact path="/">
+              <Home />
 
-          </Route>
-          <Route path="/products">
-              <Products/>
-          </Route>
-          <Route path="/services">
-              <Services/>
-          </Route>
-          <Route path="/dashboard">
-              <Dashboard/>
-          </Route>
-          <Route path="/login">
-              <Login/>
-          </Route>
-          <Route path="/register">
-              <Register/>
-          </Route>
-          <Route path="*">
-            <NotFound />
-          </Route>
-        </Switch>
-        <Footer/>
-      </Router>
+            </Route>
+            <Route path="/products">
+              <Products />
+            </Route>
+            <Route path="/services">
+              <Services />
+            </Route>
+            <Route path="/dashboard">
+              <Dashboard />
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/register">
+              <Register />
+            </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
+          <Footer />
+        </Router>
+      </AuthProvider>
     </div>
   );
 }
