@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Products.css';
 
-const Products = () => {
+const HomeProduct = () => {
     const [products, setProducts] = useState([]);
 
     // console.log(products, "Products");
@@ -16,12 +15,12 @@ const Products = () => {
 
     return (
         <div>
-            <h2>Products Comp</h2>
+            <h2>Home Products Comp</h2>
             <div className="products">
             {
-                products.map((product) => (
+                products.slice(0,6).map((product) => (
                     <div className="card card-content">
-                         <img class="card-img-top" src={product.img} alt="Card image cap"/>
+                         <img className="card-img-top" src={product.img} alt="Card image cap"/>
                         <div className="card-body">
                             <h5 className="card-title">{product.name}</h5>
                             <p className="card-text">{product.desc}</p>
@@ -36,4 +35,4 @@ const Products = () => {
     )
 }
 
-export default Products;
+export default HomeProduct;

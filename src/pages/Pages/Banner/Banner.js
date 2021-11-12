@@ -17,7 +17,7 @@ const Banner = () => {
         <h1>Electric And City Bike.</h1>
         <p>Electric Bikes, Road bikes, Hybrid Bikes, Fat Bikes</p>
         <Link to="/products">
-        <button type="button" class="btn btn-outline-danger">Explore More</button>
+        <button type="button" className="btn btn-outline-danger">Explore More</button>
         </Link>
       </div>
     </div>
@@ -26,7 +26,7 @@ const Banner = () => {
       <div className="carousel-caption d-none d-md-block">
         <h1>Largest Bicycle Manufacture</h1>
         <p>Checkout out our exclusive collection of mountain bikes, city bikes, Girls bikes and more.</p>
-       <button type="button" class="btn btn-outline-danger">Explore More</button>
+        <Link to="/products"> <button type="button" className="btn btn-outline-danger">Explore More</button></Link>
       </div>
     </div>
     <div className="carousel-item">
@@ -34,7 +34,7 @@ const Banner = () => {
       <div className="carousel-caption d-none d-md-block">
         <h1>Buy best bike online for man & women and Children.</h1>
         <p>Up to 80% off on bikes.</p>
-       <button type="button" class="btn btn-outline-danger">Explore More</button>
+       <Link to="/products"> <button type="button" className="btn btn-outline-danger">Explore More</button></Link>
       </div>
     </div>
   </div>

@@ -1,0 +1,16 @@
+.CompletePurchase {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CompletePurchase h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: teal;
+}
+
+.success {
+  color: rgb(44, 214, 58);
+}

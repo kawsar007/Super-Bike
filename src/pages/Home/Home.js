@@ -1,7 +1,7 @@
 import React from 'react'
+import HomeProduct from '../HomeProduct/HomeProduct'
 import Adventure from '../Pages/Adventure/Adventure'
 import Banner from '../Pages/Banner/Banner'
-import Products from '../Pages/Products/Products'
 import Review from '../Pages/Review/Review'
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
         <div>
             <Banner/>
             <Adventure/>
-            <Products/>
+            <HomeProduct/>
             <Review/>
         </div>
     )

@@ -9,8 +9,11 @@ import Register from "./pages/Login/Register/Register";
 import Dashboard from "./pages/Pages/Dashboard/Dashboard";
 import Footer from "./pages/Pages/Footer/Footer";
 import Navbar from "./pages/Pages/Navbar/Navbar";
+import Newsletter from "./pages/Pages/Newsletter/Newsletter";
 import NotFound from "./pages/Pages/NotFound/NotFound";
 import Products from "./pages/Pages/Products/Products";
+import CompletePurchase from "./pages/Pages/Purchase/CompletePurchase/CompletePurchase";
+import Purchase from "./pages/Pages/Purchase/Purchase";
 import Services from "./pages/Pages/Services/Services";
 import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
 
@@ -34,6 +37,12 @@ function App() {
             <PrivateRoute path="/dashboard">
               <Dashboard />
             </PrivateRoute>
+            <PrivateRoute path="/purchase">
+              <Purchase />
+            </PrivateRoute>
+            <Route path="/purchase-complete">
+              <CompletePurchase />
+            </Route>
             <Route path="/login">
               <Login />
             </Route>
@@ -44,6 +53,7 @@ function App() {
               <NotFound />
             </Route>
           </Switch>
+          <Newsletter/>
           <Footer />
         </Router>
       </AuthProvider>
