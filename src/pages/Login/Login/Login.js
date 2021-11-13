@@ -42,7 +42,7 @@ const Login = () => {
                 {
                     user.email ? <div className="d-grid gap-2">
                         <button className="btn btn-primary" onClick={logout} type="submit">Logout</button>
-                    </div> : <div className="d-grid gap-2">
+                    </div> : <div className="d-grid gap-2 col-4 mx-auto">
                         <button className="btn btn-primary" type="submit">Login</button>
                     </div>
                 }

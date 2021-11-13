@@ -55,7 +55,7 @@ const Register = () => {
                         <input type="password" name="password2" onChange={handleOnChange} className="form-control" id="rePassword" />
                     </div>
                 </div>
-                <div className="d-grid gap-2">
+                <div className="d-grid col-4 mx-auto gap-2">
                     <button className="btn btn-primary" type="submit">Register</button>
                 </div>
                 <Link style={{ textDecoration: 'none' }} to="/login">

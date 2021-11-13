@@ -13,3 +13,20 @@
 .card-img-top {
   height: 300px;
 }
+
+@media screen and (max-width: 992px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+}

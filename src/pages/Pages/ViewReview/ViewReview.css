@@ -1,8 +1,8 @@
 .slide-card {
-  background-color: #fff;
-  background-image: url("https://image.freepik.com/free-photo/crumpled-white-paper-textured-background_53876-103707.jpg");
-  background-size: cover;
-  color: #333;
+  background-color: rgb(54, 167, 59);
+  /* background-image: url("https://image.freepik.com/free-photo/crumpled-white-paper-textured-background_53876-103707.jpg");
+  background-size: cover; */
+  color: #fff;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 40px;
@@ -10,10 +10,15 @@
 }
 
 .single-card {
-  color: #333;
+  color: #fff;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 40px;
   margin: 10px;
   border-radius: 50%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
 }

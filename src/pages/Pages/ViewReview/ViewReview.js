@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Slider from "react-slick";
+import '../../../css/Utilities.css';
 import './ViewReview.css';
 
 function ViewReview() {
@@ -48,18 +49,20 @@ function ViewReview() {
         ]
       };
     return (
+      <div>
+        <h2 className="title-header">Uesr Review</h2>
         <div className="slide-card">
-            <h2>Reviews</h2>
              <Slider {...settings}>
                  {reviews.map(review => (
                     <div key={review.id} className="single-card">
-                        <h3>{review.name}</h3>
+                        <h5>{review.name}</h5>
                         <p>{review.review}</p>
                         <p>{review.star}</p>
                     </div>
                  ))}
                 
              </Slider>
+        </div>
         </div>
     )
 }

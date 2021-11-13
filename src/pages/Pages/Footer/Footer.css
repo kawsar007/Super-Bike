@@ -31,3 +31,35 @@
   margin-right: 8px;
   cursor: pointer;
 }
+
+.f-para {
+  color: #fff;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid #1ba370;
+  }
+  .footer-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid #1ba370;
+  }
+  .footer-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;
+  }
+}

@@ -11,7 +11,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-item">
                     <div>
-                        <h2>Shop By </h2>
+                        <h3>Shop By </h3>
                         <p>Your Orders</p>
                         <p>Your Wishlist</p>
                         <p>Payment</p>
@@ -19,33 +19,35 @@ const Footer = () => {
                         <p>Conditions</p>
                     </div>
                     <div>
-                        <h2>Shop By </h2>
-                        <p>Your Orders</p>
-                        <p>Your Wishlist</p>
-                        <p>Payment</p>
-                        <p>Delivery</p>
-                        <p>Conditions</p>
+                        <h3>Products </h3>
+                        <p>Prices drop</p>
+                        <p>New products</p>
+                        <p>Best sales</p>
+                        <p>Stores</p>
+                        <p>Login</p>
                     </div>
                     <div>
-                        <h2>Shop By </h2>
-                        <p>Your Orders</p>
-                        <p>Your Wishlist</p>
-                        <p>Payment</p>
+                        <h3>Our Company</h3>
+                        <p>About us</p>
+                        <p>Contact us</p>
+                        <p>Sitemap</p>
                         <p>Delivery</p>
-                        <p>Conditions</p>
+                        <p>Stores</p>
                     </div>
+
+
+
+
                     <div>
-                        <h2>Shop By </h2>
-                        <p>Your Orders</p>
-                        <p>Your Wishlist</p>
-                        <p>Payment</p>
-                        <p>Delivery</p>
-                        <p>Conditions</p>
+                        <h3>Contact</h3>
+                        <p>44 Shirley Ave, West Chicago,<br/> IL 60185 Angelo</p>
+                        <p>0123 456 789</p>
+                        <p>Dixit0611@gmail.com</p>
                     </div>
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>Copyright © 2013-present Magento, Inc. All rights reserved.</p>
+                <p>Copyright © 2021-present Magento, Inc. All rights reserved.</p>
                 <div className="payment-btn">
                     <img src="images/payment1.png" alt=""/>
                     <img src="images/payment2.png" alt=""/>

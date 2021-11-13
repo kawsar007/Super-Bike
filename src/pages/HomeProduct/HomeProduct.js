@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import '../../css/Utilities.css';
 
 const HomeProduct = () => {
     const [products, setProducts] = useState([]);
@@ -15,7 +16,7 @@ const HomeProduct = () => {
 
     return (
         <div>
-            <h2>Home Products Comp</h2>
+            <h2 className="title-header">Our Products</h2>
             <div className="products">
             {
                 products.slice(0,6).map((product) => (

@@ -25,7 +25,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link className="nav-link" to="purchase">Purchase</Link>
               </li>
-              <li className="nav-item dropdown">
+              {user.email && <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dashboard
                 </Link>
@@ -36,7 +36,8 @@ const Navbar = () => {
                   {/* <li><hr className="dropdown-divider"></li> */}
                   <li> <Link className="dropdown-item" onClick={logout} to="login">Logout</Link></li>
                 </ul>
-              </li>
+              </li>}
+              
               {/* <li className="nav-item">
                 <Link className="nav-link" to="dashboard">Dashboard</Link>
               </li> */}
