@@ -1,0 +1,19 @@
+.slide-card {
+  background-color: #fff;
+  background-image: url("https://image.freepik.com/free-photo/crumpled-white-paper-textured-background_53876-103707.jpg");
+  background-size: cover;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  margin: 10px;
+}
+
+.single-card {
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  margin: 10px;
+  border-radius: 50%;
+}

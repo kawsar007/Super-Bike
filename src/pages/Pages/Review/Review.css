@@ -1,0 +1,13 @@
+.review form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.review form input,
+textarea {
+  width: 50%;
+  margin-bottom: 10px;
+}

@@ -28,16 +28,28 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link className="nav-link" to="purchase">Purchase</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="dashboard">Dashboard</Link>
+              <li className="nav-item dropdown">
+                <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dashboard
+                </Link>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><Link className="dropdown-item" to="/pay">Pay</Link></li>
+                  <li><Link className="dropdown-item" to="/my-order">My Order</Link></li>
+                  <li><Link className="dropdown-item" to="/review">Review</Link></li>
+                  {/* <li><hr className="dropdown-divider"></li> */}
+                  <li> <Link className="dropdown-item" onClick={logout} to="login">Logout</Link></li>
+                </ul>
               </li>
+              {/* <li className="nav-item">
+                <Link className="nav-link" to="dashboard">Dashboard</Link>
+              </li> */}
             </ul>
             <span className="navbar-text d-flex">
-              {user?.email ?  <Link className="nav-link" onClick={logout} to="login">Logout</Link>
-               : 
-               <Link className="nav-link" to="login">Login</Link>
+              {user?.email ? <Link className="nav-link" onClick={logout} to="login">Logout</Link>
+                :
+                <Link className="nav-link" to="login">Login</Link>
               }
-             
+
               <Link className="nav-link" to="register">Register</Link>
             </span>
           </div>

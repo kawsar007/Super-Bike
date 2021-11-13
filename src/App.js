@@ -8,12 +8,14 @@ import Login from "./pages/Login/Login/Login";
 import Register from "./pages/Login/Register/Register";
 import Dashboard from "./pages/Pages/Dashboard/Dashboard";
 import Footer from "./pages/Pages/Footer/Footer";
+import MyOrder from "./pages/Pages/MyOrder/MyOrder";
 import Navbar from "./pages/Pages/Navbar/Navbar";
 import Newsletter from "./pages/Pages/Newsletter/Newsletter";
 import NotFound from "./pages/Pages/NotFound/NotFound";
+import Pay from "./pages/Pages/Pay/Pay";
 import Products from "./pages/Pages/Products/Products";
-import CompletePurchase from "./pages/Pages/Purchase/CompletePurchase/CompletePurchase";
 import Purchase from "./pages/Pages/Purchase/Purchase";
+import Review from "./pages/Pages/Review/Review";
 import Services from "./pages/Pages/Services/Services";
 import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
 
@@ -40,8 +42,14 @@ function App() {
             <PrivateRoute path="/purchase">
               <Purchase />
             </PrivateRoute>
-            <Route path="/purchase-complete">
-              <CompletePurchase />
+            <Route path="/pay">
+              <Pay />
+            </Route>
+            <Route path="/my-order">
+              <MyOrder />
+            </Route>
+            <Route path="/review">
+              <Review />
             </Route>
             <Route path="/login">
               <Login />

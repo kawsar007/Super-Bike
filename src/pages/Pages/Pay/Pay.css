@@ -1,11 +1,11 @@
-.CompletePurchase {
+.pay {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.CompletePurchase h1 {
+.pay h1 {
   font-size: 4rem;
   font-weight: 700;
   color: teal;
