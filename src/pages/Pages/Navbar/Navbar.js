@@ -37,10 +37,6 @@ const Navbar = () => {
                   <li> <Link className="dropdown-item" onClick={logout} to="login">Logout</Link></li>
                 </ul>
               </li>}
-              
-              {/* <li className="nav-item">
-                <Link className="nav-link" to="dashboard">Dashboard</Link>
-              </li> */}
             </ul>
             <span className="navbar-text d-flex">
               {user?.email ? <Link className="nav-link" onClick={logout} to="login">Logout</Link>
@@ -48,7 +44,7 @@ const Navbar = () => {
                 <Link className="nav-link" to="login">Login</Link>
               }
 
-              <Link className="nav-link" to="register">Register</Link>
+              { !user.email && <Link className="nav-link" to="register">Register</Link>} 
             </span>
           </div>
         </div>
