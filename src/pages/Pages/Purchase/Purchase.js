@@ -7,7 +7,7 @@ function Purchase() {
     const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
         console.log(data, "Data");
-        fetch('http://localhost:5000/purchaes', {
+        fetch('https://thawing-escarpment-88664.herokuapp.com/purchaes', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

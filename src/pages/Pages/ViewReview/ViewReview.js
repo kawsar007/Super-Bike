@@ -7,7 +7,7 @@ function ViewReview() {
     const [reviews, setReviews] = useState([]);
     console.log(reviews, "RR");
     useEffect(() => {
-        axios.get('http://localhost:5000/reviews')
+        axios.get('https://thawing-escarpment-88664.herokuapp.com/reviews')
         .then(res => {
             setReviews(res.data);
         })
@@ -52,7 +52,7 @@ function ViewReview() {
             <h2>Reviews</h2>
              <Slider {...settings}>
                  {reviews.map(review => (
-                    <div className="single-card">
+                    <div key={review.id} className="single-card">
                         <h3>{review.name}</h3>
                         <p>{review.review}</p>
                         <p>{review.star}</p>

@@ -8,7 +8,7 @@ const HomeProduct = () => {
     // console.log(products, "Products");
 
     useEffect(() =>{
-        fetch('http://localhost:5000/products')
+        fetch('https://thawing-escarpment-88664.herokuapp.com/products')
          .then(res => res.json())
          .then(data => setProducts(data));
     }, []);

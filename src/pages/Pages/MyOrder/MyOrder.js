@@ -5,13 +5,34 @@ const MyOrder = () => {
     console.log(order, 'Order');
 
     useEffect(() => {
-        fetch('http://localhost:5000/purchaes')
+        fetch('https://thawing-escarpment-88664.herokuapp.com/purchaes')
             .then(res => res.json())
             .then(data => setOrder(data));
     }, [])
+
+    const handleDeleteOrder = (id) => {
+        const proceed = window.confirm('Are you sure you want to cancel order?')
+        if (proceed) {
+            const url = `https://thawing-escarpment-88664.herokuapp.com/purchaes/${id}`;
+            fetch(url, {
+                method: 'DELETE',
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deletedCount > 0) {
+                        alert('Deleted Successfully');
+                        const remainingOrder = order.filter(user => user._id !== id)
+                        setOrder(remainingOrder)
+                    }
+                })
+        }
+
+    }
+
+
     return (
         <div>
-            <h2 style={{display: 'flex', justifyContent:'center', padding: '20px 10px', margin: '0 auto'}} className="order-title">Order List</h2>
+            <h2 style={{ display: 'flex', justifyContent: 'center', padding: '20px 10px', margin: '0 auto' }} className="order-title">Order List</h2>
             <table class="table table-success table-striped">
                 <thead>
                     <tr>
@@ -32,7 +53,7 @@ const MyOrder = () => {
                                 <td>{item.Email}</td>
                                 <td>{item.address}</td>
                                 <td>{item.phone}</td>
-                                <td><button type="button" class="btn btn-primary btn-sm">Cancel</button></td>
+                                <td><button onClick={() => handleDeleteOrder(item._id)} type="button" className="btn btn-primary btn-sm">Cancel</button></td>
                             </tr>
                         ))
                     }

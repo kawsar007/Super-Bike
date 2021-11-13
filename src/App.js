@@ -16,7 +16,6 @@ import Pay from "./pages/Pages/Pay/Pay";
 import Products from "./pages/Pages/Products/Products";
 import Purchase from "./pages/Pages/Purchase/Purchase";
 import Review from "./pages/Pages/Review/Review";
-import Services from "./pages/Pages/Services/Services";
 import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
 
 function App() {
@@ -32,9 +31,6 @@ function App() {
             </Route>
             <Route path="/products">
               <Products />
-            </Route>
-            <Route path="/services">
-              <Services />
             </Route>
             <PrivateRoute path="/dashboard">
               <Dashboard />

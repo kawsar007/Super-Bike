@@ -9,7 +9,7 @@ const Products = () => {
     // console.log(products, "Products");
 
     useEffect(() =>{
-        fetch('http://localhost:5000/products')
+        fetch('https://thawing-escarpment-88664.herokuapp.com/products')
          .then(res => res.json())
          .then(data => setProducts(data));
     }, []);
@@ -20,7 +20,7 @@ const Products = () => {
             <div className="products">
             {
                 products.map((product) => (
-                    <div className="card card-content">
+                    <div key={product._id} className="card card-content">
                          <img class="card-img-top" src={product.img} alt="Card image cap"/>
                         <div className="card-body">
                             <h5 className="card-title">{product.name}</h5>
