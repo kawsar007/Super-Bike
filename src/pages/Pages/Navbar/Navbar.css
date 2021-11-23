@@ -3,3 +3,11 @@
   justify-content: flex-end;
   margin-right: 500px;
 }
+
+.style-btn {
+  border-radius: 15px;
+  background-color: #7aa93c;
+  color: white;
+  font-weight: 600;
+  margin-right: 6px;
+}

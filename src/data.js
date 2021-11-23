@@ -80,3 +80,24 @@ export const slider = [
         desc: 'Up to 80% off on bikes'
     }
 ]
+
+export const SlickImg = [
+    {
+        img: "https://templatekit.jegtheme.com/trail/wp-content/uploads/sites/91/2021/05/asset4.png"
+    },
+    {
+        img: "https://templatekit.jegtheme.com/trail/wp-content/uploads/sites/91/2021/05/asset5.png"
+    },
+    {
+        img: 'https://templatekit.jegtheme.com/trail/wp-content/uploads/sites/91/2021/05/asset6.png'
+    },
+    {
+        img: 'https://templatekit.jegtheme.com/trail/wp-content/uploads/sites/91/2021/05/asset1-U3S4CX.png'
+    },
+    {
+        img: 'https://templatekit.jegtheme.com/trail/wp-content/uploads/sites/91/2021/05/asset2.png'
+    },
+    {
+        img: 'https://templatekit.jegtheme.com/trail/wp-content/uploads/sites/91/2021/05/asset3.png'
+    }
+]

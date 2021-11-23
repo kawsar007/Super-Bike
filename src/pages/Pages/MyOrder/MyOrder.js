@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './MyOrder.css';
 
 const MyOrder = () => {
     const [order, setOrder] = useState([]);
@@ -31,9 +32,9 @@ const MyOrder = () => {
 
 
     return (
-        <div>
-            <h2 style={{ display: 'flex', justifyContent: 'center', padding: '20px 10px', margin: '0 auto' }} className="order-title">Order List</h2>
-            <table class="table table-success table-striped">
+        <div className="table-responsive myOrder">
+            <h2 style={{ display: 'flex', justifyContent: 'center', color: '#fff', padding: '20px 10px', margin: '0 auto' }} className="order-title">Order Information</h2>
+            <table class="table table-success table-dark table-sm">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -46,9 +47,9 @@ const MyOrder = () => {
                 </thead>
                 <tbody>
                     {
-                        order.map(item => (
+                        order.map((item, i) => (
                             <tr>
-                                <th scope="row">1</th>
+                                <th scope="row">{i+1}</th>
                                 <td>{item.name}</td>
                                 <td>{item.Email}</td>
                                 <td>{item.address}</td>

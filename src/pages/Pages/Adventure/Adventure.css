@@ -45,4 +45,12 @@
     width: 90%;
     margin: 0 auto;
   }
+  .adventure-image img {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

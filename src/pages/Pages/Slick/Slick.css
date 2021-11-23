@@ -1,0 +1,26 @@
+.slick-img {
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slick-img img {
+  height: 130px;
+  width: 200px;
+  align-items: center;
+  padding: 20px 30px;
+  opacity: 0.5;
+}
+.slick-img img:hover {
+  opacity: 1;
+}
+.btn-group {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 5px 10px;
+}

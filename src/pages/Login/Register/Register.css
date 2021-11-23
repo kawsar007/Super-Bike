@@ -3,6 +3,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("https://img.freepik.com/free-vector/abstract-banner-background-with-red-shapes_1361-3348.jpg?size=626&ext=jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 form {
@@ -13,4 +16,8 @@ form {
 .spinner {
   width: 3rem;
   height: 3rem;
+}
+
+.col-form-label {
+  color: #fff;
 }

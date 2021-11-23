@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import '../../../css/Utilities.css';
 import './ViewReview.css';
@@ -51,6 +52,7 @@ function ViewReview() {
     return (
       <div>
         <h2 className="title-header">Uesr Review</h2>
+        <p className="review-here">You Can <Link to="/review"> Review Here...</Link></p>
         <div className="slide-card">
              <Slider {...settings}>
                  {reviews.map(review => (
